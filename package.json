@@ -1,0 +1,52 @@
+{
+  "name": "abs-time",
+  "version": "0.0.1",
+  "description": "abs time",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "init": "yarn install && yarn add 'date-fns'",
+    "test": "npm run clean && jest --coverage",
+    "build": "npm run clean && rollup -c",
+    "clean": "rimraf ./lib",
+    "precommit": "npm run test",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WNLee/abs-time.git"
+  },
+  "keywords": [
+    "abs",
+    "time"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-external-helpers": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "jest": "^25.3.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.6.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "date-fns": "^2.12.0"
+  },
+  "author": "geeklee2020@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WNLee/abs-time/issues"
+  },
+  "homepage": "https://github.com/WNLee/abs-time#readme",
+  "dependencies": {
+    "date-fns": "^2.12.0"
+  }
+}

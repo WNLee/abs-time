@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env", 
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 7"]
+        },
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-external-helpers"
+    ]
+  ]
+}
