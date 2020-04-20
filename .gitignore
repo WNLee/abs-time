@@ -4,6 +4,7 @@ coverage/
 .DS_Store
 npm-debug.json
 package-lock.json
+yarn-error.log
 yarn.lock
 src/**/*.js
 src/*.js
