@@ -46,9 +46,6 @@
     "url": "https://github.com/WNLee/abs-time/issues"
   },
   "homepage": "https://github.com/WNLee/abs-time#readme",
-  "dependencies": {
-    "date-fns": "^2.12.0"
-  },
   "pre-commit": [
     "test"
   ]
